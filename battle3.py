@@ -50,7 +50,7 @@ target = ""
 #Characters---------------------------------------------------------------
 hero = GameCharacter("Hero", 100,"Rest", 100)
 blade = GameCharacter("Blade", 100,"Rest", 100) 
-'''
+''' Creating a hoard of zombies--------------------------------
 players =[]
 for i in range (5):
  players.append(GameCharacter("p"+str(i), i,"rest",100-i))
@@ -60,6 +60,7 @@ p=players[4]
 print(f"{p.name}, {p.stamina}, {p.action},{p.health} ") 
 p=len(players)
 print (p)
+creating a new player using just a name----------------------------
 name = input("name")
 players.append(GameCharacter(name, 100, 'rest', 100))
 p=len(players)-1
